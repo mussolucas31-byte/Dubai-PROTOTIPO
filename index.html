@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dubai Comidas Árabes | Salta</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13c8ec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#101f22",
+                        "warm-sand": "#e8e2d9",
+                        "anthracite": "#111f22"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Work Sans", sans-serif;
+        }
+
+        .font-serif {
+            font-family: "Playfair Display", serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 overflow-x-hidden">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/95 backdrop-blur-md">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-3">
+                <div class="text-primary">
+                    <span class="material-symbols-outlined text-4xl">restaurant_menu</span>
+                </div>
+                <h1 class="font-serif text-xl font-bold tracking-tight text-white lg:text-2xl">Dubai <span
+                        class="text-sm font-display font-light block lg:inline lg:ml-2 uppercase tracking-widest text-primary/80">Comidas
+                        Árabes</span></h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors"
+                    href="#experiencia">Nuestra Experiencia</a>
+                <a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors"
+                    href="#platos">Platos</a>
+                <a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors" href="#menu">Menú
+                    Digital</a>
+                <a class="text-sm font-medium text-slate-300 hover:text-primary transition-colors"
+                    href="#ubicaciones">Ubicaciones</a>
+            </nav>
+            <button
+                class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20">
+                Reservar Mesa
+            </button>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] w-full flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background-dark z-10"></div>
+            <img class="h-full w-full object-cover"
+                data-alt="Exterior del restaurante Dubai Comidas Árabes iluminado de noche" src="./hero_dubai.webp" />
+        </div>
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <h2 class="font-serif text-4xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
+                La Auténtica Experiencia de la <span class="text-primary italic">Cocina Árabe</span>
+            </h2>
+            <p class="font-display text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Disfruta de nuestros sabores tradicionales.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                    class="bg-primary hover:bg-primary/90 text-background-dark px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined">menu_book</span>
+                    Ver Menú Digital
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Nuestra Experiencia Section -->
+    <section class="bg-warm-sand py-24 px-6" id="experiencia">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <h2 class="font-serif text-4xl md:text-5xl text-anthracite leading-tight">Una Tradición que Cautiva
+                    </h2>
+                    <div class="w-20 h-1 bg-primary"></div>
+                    <p class="text-slate-700 text-lg leading-relaxed">
+                        En Dubai Comidas Árabes, rescatamos las recetas ancestrales de oriente para traer a Salta una
+                        propuesta gastronómica inigualable. La excelencia de nuestra cocina reside en la selección
+                        meticulosa de especias importadas y el respeto por los tiempos de cocción tradicionales.
+                    </p>
+                    <p class="text-slate-700 text-lg leading-relaxed">
+                        Cada plato cuenta una historia milenaria, desde la suavidad de nuestro hummus hasta el aroma
+                        ahumado de nuestras carnes a la brasa.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 md:gap-8">
+                    <div class="space-y-4 pt-12">
+                        <img class="rounded-2xl shadow-2xl object-cover aspect-[3/4] w-full"
+                            data-alt="Shawarma de carne tradicional en plato elegante"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPPCgCFkQ_cMxaYxwjWlWb34uEKAvojE0uMu-ktpSZ4hmKg8JtLqI1TI-mggZhTasueJ3X214oIFWKwosW2m_7OyJMdHW_fGKB1KzqZ2rzK9xb98PKtdgx6NIIrkcDblCOsyPzdpXLZU98Jyj3W4UxeEKt1KMFwBuNDNIslZsU-DL7ZQW-dZtVeu7O8h70nXSIX8PZkSiipcXWQs_Ovb0nnyDPSebYgLk7dPFX6ye2DEA8rcKDem4b_Q5AWkf2GWEyfFnnEBNnkM8" />
+                        <p class="font-serif text-anthracite font-bold italic text-center">Shawarma Tradicional</p>
+                    </div>
+                    <div class="space-y-4">
+                        <img class="rounded-2xl shadow-2xl object-cover aspect-[3/4] w-full"
+                            data-alt="Plato de hummus cremoso con aceite de oliva"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVeoyTROL19wEQLg02xMcZpgBHw8ll6PD8vfmfjLBLTRXPIpwjqJlFLTfPgtVqsTLXYu74_mLX9yYIMlIa-ZbFZPoqAz2Zm4ykbVugFZoxzitdakCjcd_UO4Xlwry39-cSUsd436kiQWjY6rwFa0rjSTJdreXOlQHOiCpyJa-fVGjorieRLauKeoXEYwdzhtUMLFsJ8mVbQWPXEPv5ww3_-S6NqxdfmZwAOeOliL8pGHA_fdPGFIsG22K72vsTe4u1alcD08l_50A" />
+                        <p class="font-serif text-anthracite font-bold italic text-center">Hummus de la Casa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Platos Destacados Section -->
+    <section class="bg-background-dark py-24 px-6 border-y border-white/5" id="platos">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl text-white mb-4">Sabores Que Enamoran</h2>
+                <p class="text-slate-400 font-display">Nuestra selección premium de especialidades árabes</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="group border border-primary/20 bg-white/5 rounded-2xl overflow-hidden hover:border-primary transition-all duration-500">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Kebab de cordero a las brasas"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5cXeXZwN0F4SJxGrXvawOIwny0tG4D6jRaFUSEDUIACi9qOAj_mZq8h5NnRboDpb_M9GHxCKp4BgmnREhezAD261kDoSiy6G7K11gcd16ftnz2Uyj6dZyqOpqPoAeQRmPdI8hwsKKsKjIuLv91voWeBNqEGD_Pa2LEwYyrNut_DruJkXdIjDx27-phE_2SBKpPpjW2OOKlI0vZIkLue76WBCYNWklZyykOaNQaZwpSgwu8WfnWR8BEnIq92k9E4tIhtwBkDsMRMk" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl text-white mb-2">Kebab Especial</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Mix de carnes premium especiadas y asadas a la
+                            leña con guarnición de vegetales asados.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="group border border-primary/20 bg-white/5 rounded-2xl overflow-hidden hover:border-primary transition-all duration-500">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Falafel crujiente con salsa tahini"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw0UkIgmHZRMn55YWIzxuM_3ERidA8jua-D7Axx7oePGu63R_2OnCDfNgKTxwoU4ALcTxrs994NWjSm_jaXfBGVOJ9UUgH_51vRw7g08d-6NNjcQHiU-679HO9ls38csl1O_jnPdAwlKMS222RFGje1Y2BbDYDVa6htgs2VIL_jSYUDv-ci4BwNJklGF-o6E3pz4C9xSHqFMlqNHWFrfFE6CD9JHvV7LoydpYwCdAKXnHT9MfbAAopk9j6fPZ1HOLT2MdmlP56aBU" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl text-white mb-2">Falafel Crujiente</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Croquetas de garbanzo con hierbas frescas y
+                            sésamo, servidas con crema de tahini.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="group border border-primary/20 bg-white/5 rounded-2xl overflow-hidden hover:border-primary transition-all duration-500">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Ensalada Tabule fresca con perejil"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuUfcrJ29qkNF0Y6BUmuqJUQi62RMuP511IdCRhZI_rZ5_fSXJI7qKTGt3YM9pSBV5pbMFcvzGGRU8TpNv0OkqI3IT_lukVFukKFYQJ8uvj7Hwgfj8_3iFVGuAvaMRn6c9h9o5H6x7uHjllyIJjq0RWBupAG-bMIANrW2m306KIarndiO41GyuZyWgUPeo0-1CHjf2QCTixQisNrkDh0YLf_47raTU3p-oCPafVxPsIfmmDIh-oF6kzLfhA9vSpHp3_wCq1WCdLBM" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl text-white mb-2">Tabule Real</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Refrescante ensalada de perejil picado a mano,
+                            tomate fresco, trigo burgol y limón.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="group border border-primary/20 bg-white/5 rounded-2xl overflow-hidden hover:border-primary transition-all duration-500">
+                    <div class="h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Baklava con pistachos y almíbar"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUKRlTp0zmJ7zWVUsUVPjtCanqcTA5i_N3JWW4YE2WJYB4OSQ83KCuvCP5kOET2_4bGyhtq4X2H16bTzuS5IA1hdN3fv_dbpa0Q6VSMTUEJkE5WAZiTPRHMPGwCbyur9O4Nfw7XfRbxxAjzzOFWQtKHylAr1gHs1CqSSpE0XNi74-UdM6KB32bOTjVa3vB-KMyZjfN5pVeCNnaWITWooMPnrKOVMw7awNYBIlRwEjLWreexdfQJzmr83s7zHOdPJeakFYCHqrouJY" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl text-white mb-2">Baklava Imperial</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Delicado hojaldre artesanal relleno de frutos
+                            secos seleccionados y almíbar de azahar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menú Digital Section -->
+    <section class="relative py-24 px-6 overflow-hidden" id="menu">
+        <!-- Gradient background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-background-dark via-[#0d2a30] to-background-dark z-0"></div>
+        <div class="absolute inset-0 bg-primary/5 z-0"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h2 class="font-serif text-4xl md:text-5xl text-white mb-8">Explora Nuestra Carta Completa</h2>
+            <p class="text-slate-400 mb-12 text-lg">Descubre la variedad de platos, postres y bebidas exclusivas que
+                tenemos preparados para ti.</p>
+            <div class="inline-block p-1 bg-white rounded-3xl shadow-xl">
+                <button
+                    class="bg-primary hover:bg-primary/90 text-background-dark px-12 py-6 rounded-2xl font-bold text-xl transition-all flex items-center gap-4 shadow-lg">
+                    <span class="material-symbols-outlined text-3xl">picture_as_pdf</span>
+                    Descargar Menú Digital
+                </button>
+            </div>
+            <p class="mt-8 text-slate-500 text-sm uppercase tracking-widest">Disponible en PDF para tu móvil</p>
+        </div>
+    </section>
+    <!-- Nuestras Ubicaciones Section -->
+    <section class="bg-background-dark py-24 px-6" id="ubicaciones">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl text-white mb-4">Visítanos en Salta</h2>
+                <div class="w-20 h-1 bg-primary"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Location 1 -->
+                <div class="bg-warm-sand rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                    <div class="aspect-square w-full overflow-hidden">
+                        <img src="./dubai_centro.webp" alt="Dubai Centro" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6 space-y-4 flex flex-col flex-1">
+                        <p class="text-slate-700 flex items-start gap-2 font-medium">
+                            <span class="material-symbols-outlined text-primary shrink-0">location_on</span>
+                            Leguizamon 296
+                        </p>
+                        <div class="space-y-2">
+                            <a class="flex items-center gap-3 text-anthracite hover:text-primary transition-colors" href="#">
+                                <span class="material-symbols-outlined text-green-600 text-base">chat</span>
+                                +54 387 123-4567
+                            </a>
+                            <a class="flex items-center gap-3 text-anthracite hover:text-primary transition-colors" href="#">
+                                <span class="material-symbols-outlined text-base">call</span>
+                                0387 422-9999
+                            </a>
+                        </div>
+                        <a href="https://maps.google.com/?q=Leguizamon+296,+Salta" target="_blank" rel="noopener noreferrer"
+                            class="w-full bg-primary hover:bg-primary/90 text-background-dark py-3 rounded-xl font-bold transition-all text-center block mt-auto">
+                            Cómo Llegar
+                        </a>
+                    </div>
+                </div>
+                <!-- Location 2 -->
+                <div class="bg-warm-sand rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                    <div class="aspect-square w-full overflow-hidden">
+                        <img src="./dubai_punto.webp" alt="El Punto / San Lorenzo Chico" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6 space-y-4 flex flex-col flex-1">
+                        <p class="text-slate-700 flex items-start gap-2 font-medium">
+                            <span class="material-symbols-outlined text-primary shrink-0">location_on</span>
+                            El Punto / San Lorenzo Chico
+                        </p>
+                        <div class="space-y-2">
+                            <a class="flex items-center gap-3 text-anthracite hover:text-primary transition-colors" href="#">
+                                <span class="material-symbols-outlined text-green-600 text-base">chat</span>
+                                +54 387 765-4321
+                            </a>
+                            <a class="flex items-center gap-3 text-anthracite hover:text-primary transition-colors" href="#">
+                                <span class="material-symbols-outlined text-base">call</span>
+                                0387 431-8888
+                            </a>
+                        </div>
+                        <a href="https://maps.google.com/?q=El+Punto+San+Lorenzo,+Salta" target="_blank" rel="noopener noreferrer"
+                            class="w-full bg-primary hover:bg-primary/90 text-background-dark py-3 rounded-xl font-bold transition-all text-center block mt-auto">
+                            Cómo Llegar
+                        </a>
+                    </div>
+                </div>
+                <!-- Location 3 -->
+                <div class="bg-warm-sand rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                    <div class="aspect-square w-full overflow-hidden">
+                        <img src="./dubai_paseo.webp" alt="Paseo Salta" class="w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6 space-y-4 flex flex-col flex-1">
+                        <p class="text-slate-700 flex items-start gap-2 font-medium">
+                            <span class="material-symbols-outlined text-primary shrink-0">location_on</span>
+                            Paseo Salta Loc. 50
+                        </p>
+                        <div class="space-y-2">
+                            <a class="flex items-center gap-3 text-anthracite hover:text-primary transition-colors" href="#">
+                                <span class="material-symbols-outlined text-green-600 text-base">chat</span>
+                                +54 387 999-0000
+                            </a>
+                            <a class="flex items-center gap-3 text-anthracite hover:text-primary transition-colors" href="#">
+                                <span class="material-symbols-outlined text-base">call</span>
+                                0387 492-1111
+                            </a>
+                        </div>
+                        <a href="https://maps.google.com/?q=Paseo+Salta,+Salta+Capital" target="_blank" rel="noopener noreferrer"
+                            class="w-full bg-primary hover:bg-primary/90 text-background-dark py-3 rounded-xl font-bold transition-all text-center block mt-auto">
+                            Cómo Llegar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-white/5 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-col items-center md:items-start gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">restaurant_menu</span>
+                    <h2 class="font-serif text-xl text-white">Dubai Comidas Árabes</h2>
+                </div>
+                <p class="text-slate-500 text-sm">© 2024 Dubai Comidas Árabes. Todos los derechos reservados.</p>
+            </div>
+            <div class="flex gap-6">
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 transition-colors group"
+                    href="#">
+                    <span class="material-symbols-outlined text-white group-hover:text-primary">public</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 transition-colors group"
+                    href="#">
+                    <span class="material-symbols-outlined text-white group-hover:text-primary">camera</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 transition-colors group"
+                    href="#">
+                    <span
+                        class="material-symbols-outlined text-white group-hover:text-primary">social_leaderboard</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform cursor-pointer"
+        href="https://wa.me/5493871234567" target="_blank" rel="noopener noreferrer" title="Contactanos por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+</body>
+
+</html>
